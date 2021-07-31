@@ -1,6 +1,3 @@
-html {
-  scroll-snap-type: y mandatory;
-}
 body {
   background-image: radial-gradient(
     circle at -35% 100%,
@@ -8,7 +5,6 @@ body {
     rgb(5, 4, 8)
   );
   overflow: hidden;
-  scroll-snap-type: y mandatory;
 }
 
 #stars {
@@ -907,479 +903,40 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 600px) {
   #myNameIs {
     padding-top: 100px;
   }
-  .icons {
-    margin-left: 89%;
-  }
+
   #git {
     color: rgb(199, 199, 199);
-    font-size: 45px;
-    text-align: center;
+    font-size: 35px;
     position: fixed;
-    margin-top: 12%;
-    margin-left: 0.8%;
+    margin-left: 70%;
   }
 
   #linkedin {
     color: rgb(199, 199, 199);
-    font-size: 55px;
+    font-size: 35px;
     position: fixed;
+    margin-left: 80%;
   }
 
   #email {
     color: rgb(199, 199, 199);
-    font-size: 45px;
+    font-size: 35px;
     position: fixed;
-    margin-top: 22%;
-    margin-left: 0.25%;
-  }
-
-  ::-webkit-scrollbar {
-    width: 0px;
-  }
-
-  #myBtn {
-    position: fixed;
-    bottom: 5px;
-    float: right;
-    right: 0%;
-    left: 65%;
-    max-width: 35%;
-    width: 100%;
-    height: 5%;
-    font-size: 25px;
-    background-color: rgb(199, 199, 199);
-    padding: 0.5px;
-    padding-bottom: 2px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  /*My name is tabs*/
-  #language {
-    color: white;
-    font-size: 9vw;
-    font-family: Consolas, monospace;
-    margin-top: 0.5vw;
-    margin-left: 0.75vw;
-    padding-bottom: 0px;
-    text-align: center;
-    margin-right: 9%;
-  }
-  /* Style the tab */
-  .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: rgb(199, 199, 199);
-    width: 82.5vw;
-    margin-top: 0.5%;
-    margin-left: 3%;
-    border-radius: 10px;
-    height: 15vw;
-  }
-
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    margin-left: 1%;
-    font-size: 6.5vw;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0.5vw 0.25vw;
-    transition: 0.3s;
-    border-radius: 10px;
-    height: 15vw;
-  }
-
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgba(0, 0, 0, 0.767);
-  }
-
-  /* Create an active/current tablink class */
-
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 0.5vw 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 10px;
-  }
-  .myNameIs {
-    font-size: 9.5vw;
-  }
-
-  /*My name is Connor*/
-  #myNameIs {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 20vw;
-    top: 0;
-    height: 90vw;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  .java {
-    font-size: 8vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-    margin-right: 0%;
-  }
-
-  .python {
-    font-size: 9.5vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  .cpp {
-    font-size: 9vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  .english {
-    font-size: 11vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  #aboutmeheader {
-    font-family: muli;
-    font-size: 18vw;
-    color: white;
-    padding-top: 20vw;
-    padding-bottom: 5px;
-    margin-bottom: 0%;
-    margin-top: 0px;
-    text-align: center;
-  }
-
-  .aboutme2 {
-    visibility: hidden;
-  }
-
-  /*About Me Header Slide Left*/
-  .SlideLeft {
-    animation-name: aboutMeHeaderSlideLeft;
-    -webkit-animation-name: aboutMeHeaderSlideLeft;
-    animation-duration: 2;
-    -webkit-animation-duration: 2s;
-    visibility: visible;
-    width: 90%;
-  }
-
-  @keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  }
-
-  @-webkit-keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  }
-  /*End*/
-  @keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  }
-
-  @-webkit-keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 5%;
-      margin-right: 5%;
-    }
-  }
-  /*End*/
-
-  #line {
-    width: 90%;
-    height: 1vw;
-    border-width: 1vw;
-    margin-left: 5%;
-    padding-top: 0.5vw;
-  }
-
-  /*About Me Paragraph Slide Right*/
-  .aboutmepara {
-    visibility: visible;
-    margin-left: -100%;
-    color: #fff;
-  }
-
-  .slideRight {
-    color: white;
-    text-align: justify;
-    margin-top: 0px;
-    margin-left: 5%;
-    margin-right: 5%;
-    line-height: 50px;
-    font-size: 15vw;
-    font-family: muli;
-    -webkit-animation: slideRight 3s;
-    -webkit-animation-delay: 2s;
-    animation: slideRight 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    width: 90%;
-  }
-
-  @keyframes slideRight {
-    from {
-      margin-left: -100%;
-      visibility: hidden;
-    }
-    to {
-      margin-left: 5%;
-      margin-right: 5%;
-      visibility: visible;
-    }
-  }
-
-  @-webkit-keyframes slideRight {
-    from {
-      margin-left: -100%;
-      width: 100%;
-      visibility: hidden;
-    }
-    to {
-      margin-left: 5%;
-      margin-right: 5%;
-      width: 100%;
-      visibility: visible;
-    }
-  }
-  /*End*/
-
-  #aboutmepara {
-    text-align: justify;
-    padding-bottom: 1vw;
-    color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 3vw;
-    width: 90%;
-  }
-
-  /*Slide Up Line*/
-  .linehidden {
-    visibility: hidden;
-  }
-
-  .fadeIn {
-    animation: fadeIn;
-    -webkit-animation: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-
-  /*Slide out*/
-  .slideOut {
-    margin-left: 300%;
-  }
-
-  #skillsheader {
-    color: white;
-    font-size: 6vw;
-    text-align: center;
-    padding-bottom: 70vw;
-    font-family: muli;
-  }
-  #line2 {
-    width: 65%;
-    border-width: 0.5vw;
-    margin-left: 17.5%;
-    height: 0vw;
-    margin-top: 0px;
-    padding-bottom: 0vw;
-  }
-  #skills {
-    margin-left: 4%;
-    margin-right: 0%;
-    text-align: center;
-  }
-  #skills1 {
-    float: left;
-    font-size: 3vw;
-    text-align: left;
-    width: 20%;
-  }
-  #skills2 {
-    float: left;
-    font-size: 3vw;
-    text-align: left;
-    width: 35%;
-  }
-  #skills3 {
-    float: left;
-    font-size: 3vw;
-    text-align: left;
-    width: 40%;
-  }
-  #aboutsite {
-    padding-top: 12vw;
-    font-size: 12.5vw;
-    color: white;
-    text-align: center;
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  #line3 {
-    width: 90%;
-    border-width: 1vw;
-    margin-left: 5%;
-    padding-top: 0vw;
-    padding-bottom: 1vw;
-  }
-  #aboutthissitepara {
-    text-align: justify;
-    padding-bottom: 82vw;
-    color: white;
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 3vw;
-    width: 90%;
-  }
-  #projectsheader {
-    padding-top: 6vw;
-    font-size: 12.5vw;
-    color: white;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 0vw;
-  }
-  #projectsline {
-    width: 60%;
-    height: 1vw;
-    border-width: 1vw;
-    margin-left: 20%;
-    text-decoration-thickness: 2vw;
-    padding-top: 0vw;
-    padding-bottom: 0vw;
-  }
-  .float-child1 {
-    color: white;
-    text-align: center;
-    padding-top: 0vw;
-  }
-  .float-child2 {
-    padding: 10px;
-    padding-top: 2vw;
-    color: white;
-    text-align: center;
-  }
-  #projects {
-    text-decoration: underline;
-    font-size: 6vw;
-  }
-  #tictactoepara {
-    font-size: 3vw;
-    color: white;
-    text-align: center;
-  }
-  #tictactoeimage {
-    padding-top: 1vw;
-    width: 40%;
-    border-radius: 20%;
-  }
-  #calculatorimage {
-    padding-top: 1vw;
-    margin-left: 30%;
-    float: left;
-    width: 40%;
-    border-radius: 35px;
-  }
-  #copyright {
-    color: white;
-    text-align: center;
-    margin-bottom: 10vw;
-    padding-top: 40vw;
-    font-size: 5vw;
+    margin-left: 90%;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
+@media screen and (min-width: 601px) {
   /*Scrollbar*/
   /* width */
   ::-webkit-scrollbar {
@@ -1433,490 +990,159 @@ body {
     margin-left: 95%;
     padding-right: 1vw;
   }
-
   /*End Icons*/
-
-  /*Button to Top*/
-  /*Floating Back-To-Top Button*/
-  #myBtn {
-    position: fixed;
-    bottom: 10px;
-    float: right;
-    right: 5%;
-    left: 90%;
-    max-width: 70px;
-    max-height: 50px;
-    width: 100%;
-    font-size: 15px;
-    background-color: rgb(199, 199, 199);
-    padding: 0.5px;
-    border-radius: 4px;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  /*End Button to Top*/
-
-  /*My name is tabs*/
-  #language {
-    color: white;
-    font-size: 1.5vw;
-    font-family: Consolas, monospace;
-    margin-top: 1vw;
-    margin-left: 4%;
-    padding-bottom: 0px;
-  }
-  /* Style the tab */
-  .tab {
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: rgb(199, 199, 199);
-    width: 20.5vw;
-    margin-top: 0.5%;
-    margin-left: 6%;
-    border-radius: 10px;
-  }
-
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
-    margin-left: 1%;
-    font-size: 1.5vw;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 0.5vw 0.25vw;
-    transition: 0.3s;
-    border-radius: 10px;
-  }
-
-  /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
-  }
-
-  /* Create an active/current tablink class */
-
-  /* Style the tab content */
-  .tabcontent {
-    display: none;
-    padding: 0.5vw 12px;
-    border: 1px solid #ccc;
-    border-top: none;
-    border-radius: 10px;
-  }
-
-  .myNameIs {
-    font-size: 7vw;
-  }
-
-  /*My name is Connor*/
-  #myNameIs {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-    scroll-snap-align: start;
-  }
-
-  .java {
-    font-size: 6vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  .python {
-    font-size: 7vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  .cpp {
-    font-size: 5vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  .english {
-    font-size: 7vw;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
-    color: white;
-    font-family: Consolas, monospace;
-    text-align: center;
-    padding-top: 4vw;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 6vw;
-    top: 0;
-    transition: 0.5s;
-    margin-bottom: 0px;
-  }
-
-  #aboutmecontainer {
-    padding-top: 16vw;
-    scroll-snap-align: start;
-  }
-  #aboutmeheader {
-    font-family: muli;
-    font-size: 5.5vw;
-    color: white;
-    padding-top: 4vw;
-    margin-bottom: 0%;
-    margin-top: 0px;
-    text-align: center;
-  }
-
-  .aboutme2 {
-    visibility: hidden;
-  }
-
-  /*About Me Header Slide Left*/
-  .SlideLeft {
-    animation-name: aboutMeHeaderSlideLeft;
-    -webkit-animation-name: aboutMeHeaderSlideLeft;
-    animation-duration: 2;
-    -webkit-animation-duration: 2s;
-    visibility: visible;
-    width: 50%;
-  }
-
-  @keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-  }
-
-  @-webkit-keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-  }
-  /*End*/
-
-  @keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-  }
-
-  @-webkit-keyframes aboutMeHeaderSlideLeft {
-    from {
-      margin-left: 100%;
-    }
-    to {
-      margin-left: 25%;
-      margin-right: 25%;
-    }
-  }
-  /*End*/
-
-  #line {
-    width: 50%;
-    height: 0vw;
-    border-width: 0.75vw;
-    margin-left: 25%;
-  }
-
-  /*About Me Paragraph Slide Right*/
-  .aboutmepara {
-    visibility: visible;
-    margin-left: -100%;
-    color: #fff;
-  }
-
-  .slideRight {
-    color: white;
-    text-align: justify;
-    margin-top: 0px;
-    margin-left: 25%;
-    margin-right: 25%;
-    line-height: 50px;
-    font-size: 1.5vw;
-    font-family: muli;
-    -webkit-animation: slideRight 3s;
-    -webkit-animation-delay: 2s;
-    animation: slideRight 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    width: 50%;
-  }
-
-  @keyframes slideRight {
-    from {
-      margin-left: -100%;
-      visibility: hidden;
-    }
-    to {
-      margin-left: 25%;
-      margin-right: 25%;
-      visibility: visible;
-    }
-  }
-
-  @-webkit-keyframes slideRight {
-    from {
-      margin-left: -100%;
-      width: 100%;
-      visibility: hidden;
-    }
-    to {
-      margin-left: 25%;
-      margin-right: 25%;
-      width: 100%;
-      visibility: visible;
-    }
-  }
-  /*End*/
-
-  #aboutmepara {
-    text-align: justify;
-    padding-bottom: 1vw;
-    color: white;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 1.5vw;
-    line-height: 2.5vw;
-    width: 50%;
-  }
-
-  /*Slide Up Line*/
-  .linehidden {
-    visibility: hidden;
-  }
-  .fadeIn {
-    animation: fadeIn;
-    -webkit-animation: fadeIn;
-    animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-    animation-duration: 4s;
-    -webkit-animation-duration: 4s;
-  }
-  @keyframes fadeIn {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-  @-webkit-keyframes fadeIn {
-    from {
-      opacity: 0%;
-    }
-    to {
-      opacity: 100%;
-    }
-  }
-
-  /*Slide out*/
-  .slideOut {
-    margin-left: 300%;
-  }
-
-  #skillsheader {
-    color: white;
-    font-size: 3vw;
-    text-align: center;
-    padding-bottom: 5vw;
-    font-family: muli;
-  }
-  #line2 {
-    width: 35%;
-    border-width: 0.5vw;
-    margin-left: 32.5%;
-    height: 0vw;
-    margin-top: 0px;
-    padding-bottom: 0vw;
-  }
-  #skills {
-    font-family: muli;
-    margin-left: 20%;
-    margin-right: 15%;
-    text-align: center;
-    padding-bottom: 5vw;
-  }
-
-  #skills1 {
-    float: left;
-    font-size: 1.5vw;
-    text-align: left;
-    width: 33%;
-    font-family: muli;
-  }
-
-  #skills2 {
-    float: left;
-    font-size: 1.5vw;
-    text-align: left;
-    width: 33%;
-    font-family: muli;
-  }
-  #skills3 {
-    float: left;
-    font-size: 1.5vw;
-    text-align: left;
-    width: 34%;
-    font-family: muli;
-  }
-  #aboutthissitecontainer {
-    padding-top: 10vw;
-  }
-  #aboutsite {
-    font-family: muli;
-    padding-top: 12vw;
-    font-size: 5.5vw;
-    color: white;
-    padding-top: 10vw;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  #line3 {
-    width: 50%;
-    border-width: 0.75vw;
-    margin-left: 25%;
-    padding-top: 0vw;
-  }
-  #aboutthissitepara {
-    font-family: muli;
-    text-align: justify;
-    padding-bottom: 10vw;
-    color: white;
-    margin-left: 25%;
-    margin-right: 25%;
-    font-size: 1.5vw;
-    width: 50%;
-  }
-  #projectscontainer {
-  }
-  #projectsheader {
-    font-family: muli;
-    padding-top: 0vw;
-    font-size: 5.5vw;
-    color: white;
-    text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
-    padding-bottom: 0vw;
-  }
-  #projectsline {
-    width: 30%;
-    border-width: 1vw;
-    margin-left: 35%;
-    padding-top: 0vw;
-    padding-bottom: 0vw;
-  }
-  .float-child1 {
-    width: 50%;
-    float: left;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    padding-top: 0vw;
-  }
-  .float-child2 {
-    width: 50%;
-    float: left;
-    padding: 10px;
-    padding-top: 0vw;
-    color: white;
-    text-align: center;
-  }
-  #projects {
-    font-family: muli;
-    font-size: 2.2vw;
-    text-decoration: underline;
-    padding-bottom: 0.5vw;
-  }
-  #tictactoepara {
-    font-family: muli;
-    font-size: 1.2vw;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding-bottom: 2.5vw;
-  }
-  #calculatorpara {
-    font-family: muli;
-    font-size: 1.2vw;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-  }
-  #tictactoeimage {
-    padding-top: 0.7vw;
-    margin-left: 30%;
-    float: left;
-    width: 35%;
-    border-radius: 35px;
-  }
-  #calculatorimage {
-    padding-top: 0.7vw;
-    margin-left: 37%;
-    float: left;
-    width: 35%;
-    border-radius: 35px;
-  }
-  #copyright {
-    color: white;
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 35vw;
-    font-size: 2vw;
-  }
 }
 
+/*Button to Top*/
+/*Floating Back-To-Top Button*/
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 5%;
+  left: 95%;
+  max-width: 30px;
+  width: 100%;
+  font-size: 12px;
+  background-color: rgb(199, 199, 199);
+  padding: 0.5px;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+}
+/*End Button to Top*/
+
+/*My name is tabs*/
+#language {
+  color: white;
+  font-size: 1.5vw;
+  font-family: Consolas, monospace;
+  margin-top: 1vw;
+  margin-left: 4%;
+  padding-bottom: 0px;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: rgb(199, 199, 199);
+  width: 20.5vw;
+  margin-top: 0.5%;
+  margin-left: 6%;
+  border-radius: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  margin-left: 1%;
+  font-size: 1.5vw;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5vw 0.25vw;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 0.5vw 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 10px;
+}
+
+/*My name is Connor*/
+#myNameIs {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: Consolas, monospace;
+  text-align: center;
+  padding-top: 4vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 6vw;
+  top: 0;
+  transition: 0.5s;
+  margin-bottom: 0px;
+}
+.myNameIs {
+  font-size: 7vw;
+}
+
+.java {
+  font-size: 6vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: Consolas, monospace;
+  text-align: center;
+  padding-top: 4vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 6vw;
+  top: 0;
+  transition: 0.5s;
+  margin-bottom: 0px;
+}
+
+.python {
+  font-size: 7vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: Consolas, monospace;
+  text-align: center;
+  padding-top: 4vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 6vw;
+  top: 0;
+  transition: 0.5s;
+  margin-bottom: 0px;
+}
+
+.cpp {
+  font-size: 5vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: Consolas, monospace;
+  text-align: center;
+  padding-top: 4vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 6vw;
+  top: 0;
+  transition: 0.5s;
+  margin-bottom: 0px;
+}
+
+.english {
+  font-size: 7vw;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  color: white;
+  font-family: Consolas, monospace;
+  text-align: center;
+  padding-top: 4vw;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 6vw;
+  top: 0;
+  transition: 0.5s;
+  margin-bottom: 0px;
+}
 /*Unclicked*/
 .tablinks {
   background-color: rgba(199, 199, 199);
@@ -1981,7 +1207,171 @@ body {
   src: url("https://fonts.google.com/specimen/Muli");
 }
 
+#aboutmeheader {
+  font-family: muli;
+  font-size: 10vw;
+  color: white;
+  padding-top: 20vw;
+  padding-bottom: 5px;
+  margin-bottom: 0%;
+  margin-top: 0px;
+  text-align: center;
+}
+.aboutme2 {
+  visibility: hidden;
+}
+
+/*About Me Header Slide Left*/
+.SlideLeft {
+  animation-name: aboutMeHeaderSlideLeft;
+  -webkit-animation-name: aboutMeHeaderSlideLeft;
+  animation-duration: 2;
+  -webkit-animation-duration: 2s;
+  visibility: visible;
+  width: 50%;
+}
+
+@keyframes aboutMeHeaderSlideLeft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+
+@-webkit-keyframes aboutMeHeaderSlideLeft {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+/*End*/
+
+#line {
+  width: 50%;
+  height: 1vw;
+  border-width: 1vw;
+  margin-left: 25%;
+  padding-top: 0.5vw;
+}
+
+/*About Me Paragraph Slide Right*/
+.aboutmepara {
+  visibility: visible;
+  margin-left: -100%;
+  color: #fff;
+}
+
+.slideRight {
+  color: white;
+  text-align: justify;
+  margin-top: 0px;
+  margin-left: 25%;
+  margin-right: 25%;
+  line-height: 50px;
+  font-size: 1.5vw;
+  font-family: muli;
+  -webkit-animation: slideRight 3s;
+  -webkit-animation-delay: 2s;
+  animation: slideRight 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  width: 50%;
+}
+
+@keyframes slideRight {
+  from {
+    margin-left: -100%;
+    visibility: hidden;
+  }
+  to {
+    margin-left: 25%;
+    margin-right: 25%;
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes slideRight {
+  from {
+    margin-left: -100%;
+    width: 100%;
+    visibility: hidden;
+  }
+  to {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 100%;
+    visibility: visible;
+  }
+}
+/*End*/
+
+#aboutmepara {
+  text-align: justify;
+  padding-bottom: 12vw;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  width: 50%;
+}
+
+/*Slide Up Line*/
+.linehidden {
+  visibility: hidden;
+}
+.fadeIn {
+  animation: fadeIn;
+  -webkit-animation: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/*Slide out*/
+.slideOut {
+  margin-left: 300%;
+}
+
 .float-container {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 10px;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+#copyright {
+  color: white;
+  text-align: center;
+  padding-top: 35vw;
+  margin-bottom: 20px;
 }

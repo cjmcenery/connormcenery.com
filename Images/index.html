@@ -1,0 +1,416 @@
+<html>
+  <link rel="stylesheet" href="connormcenery.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+  />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <!--Button to top-->
+    <button id="myBtn">
+      <a
+        id="myBtn"
+        href="#top"
+        onclick="window.scrollTo(0,0);document.documentElement.scrollTop=0;event.preventDefault()"
+        >Top</a
+      >
+    </button>
+
+    <!--Icons-->
+    <div class="icons">
+      <a
+        id="git"
+        class="icon"
+        target="_blank"
+        href="https://github.com/cjmcenery"
+        ><i class="fa fa-github"></i
+      ></a>
+      <a
+        id="linkedin"
+        class="icon"
+        target="_blank"
+        href="https://www.linkedin.com/in/connormcenery/"
+        ><i class="fa fa-linkedin-square"></i
+      ></a>
+      <a id="email" class="icon" href="mailto:cjm366@cornell.edu"
+        ><i class="fa fa-envelope"></i
+      ></a>
+    </div>
+
+    <!--Choose Hello World Language-->
+    <!-- Tab links -->
+    <div id="language">Choose your favorite language!</div>
+    <div class="tab">
+      <button
+        id="python"
+        class="tablinks pythontab"
+        onclick="pythonClass(); killSwitch(); emptyTheMessege('myNameIs'); printLetterByLetter('myNameIs', 'print(\'Hello World, I\'m Connor!\')', 70)"
+      >
+        Python
+      </button>
+      <button
+        id="java"
+        class="tablinks"
+        onclick="javaClass(); killSwitch(); emptyTheMessege('myNameIs'); printLetterByLetter('myNameIs', 'System.out.println( \'Hello World, I\'m Connor!\' );', 70)"
+      >
+        Java
+      </button>
+      <button
+        id="cpp"
+        class="tablinks"
+        onclick="cppClass(); killSwitch(); emptyTheMessege('myNameIs'); printLetterByLetter('myNameIs', 'std::cout << \'Hello World, I\'m Connor!\' << std::endl;', 70)"
+      >
+        C++
+      </button>
+      <button
+        id="english"
+        class="tablinks"
+        onclick="englishClass(); killSwitch(); emptyTheMessege('myNameIs'); printLetterByLetter('myNameIs', 'Hi, my name is Connor!', 70)"
+      >
+        English
+      </button>
+    </div>
+
+    <!--Hello World-->
+    <p id="myNameIs" class="myNameIs"></p>
+    <script>
+      function javaClass() {
+        document.getElementById("myNameIs").className = "java";
+        document.getElementById("java").className = "javatab";
+        document.getElementById("java").classList.remove("tablinks");
+        if (
+          document.getElementById("python").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("python").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("cpp").classList.contains("tablinks") == false
+        ) {
+          document.getElementById("cpp").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("english").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("english").classList.add("tablinks");
+        }
+        if (document.getElementById("python").classList.contains("pythontab")) {
+          document.getElementById("python").classList.remove("pythontab");
+        }
+        if (document.getElementById("cpp").classList.contains("cpptab")) {
+          document.getElementById("cpp").classList.remove("cpptab");
+        }
+        if (
+          document.getElementById("english").classList.contains("englishtab")
+        ) {
+          document.getElementById("english").classList.remove("englishtab");
+        }
+      }
+
+      function pythonClass() {
+        document.getElementById("myNameIs").className = "python";
+        document.getElementById("python").className = "pythontab";
+        document.getElementById("python").classList.remove("tablinks");
+        if (
+          document.getElementById("java").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("java").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("cpp").classList.contains("tablinks") == false
+        ) {
+          document.getElementById("cpp").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("english").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("english").classList.add("tablinks");
+        }
+        if (document.getElementById("java").classList.contains("javatab")) {
+          document.getElementById("java").classList.remove("javatab");
+        }
+        if (document.getElementById("cpp").classList.contains("cpptab")) {
+          document.getElementById("cpp").classList.remove("cpptab");
+        }
+        if (
+          document.getElementById("english").classList.contains("englishtab")
+        ) {
+          document.getElementById("english").classList.remove("englishtab");
+        }
+      }
+
+      function cppClass() {
+        document.getElementById("myNameIs").className = "cpp";
+        document.getElementById("cpp").className = "cpptab";
+        document.getElementById("cpp").classList.remove("tablinks");
+        if (
+          document.getElementById("python").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("python").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("java").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("java").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("english").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("english").classList.add("tablinks");
+        }
+        if (document.getElementById("java").classList.contains("javatab")) {
+          document.getElementById("java").classList.remove("javatab");
+        }
+        if (document.getElementById("python").classList.contains("pythontab")) {
+          document.getElementById("python").classList.remove("pythontab");
+        }
+        if (
+          document.getElementById("english").classList.contains("englishtab")
+        ) {
+          document.getElementById("english").classList.remove("englishtab");
+        }
+      }
+
+      function englishClass() {
+        document.getElementById("myNameIs").className = "english";
+        document.getElementById("english").className = "englishtab";
+        document.getElementById("english").classList.remove("tablinks");
+        if (
+          document.getElementById("python").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("python").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("java").classList.contains("tablinks") ==
+          false
+        ) {
+          document.getElementById("java").classList.add("tablinks");
+        }
+        if (
+          document.getElementById("cpp").classList.contains("tablinks") == false
+        ) {
+          document.getElementById("cpp").classList.add("tablinks");
+        }
+        if (document.getElementById("java").classList.contains("javatab")) {
+          document.getElementById("java").classList.remove("javatab");
+        }
+        if (document.getElementById("python").classList.contains("pythontab")) {
+          document.getElementById("python").classList.remove("pythontab");
+        }
+        if (document.getElementById("cpp").classList.contains("cpptab")) {
+          document.getElementById("cpp").classList.remove("cpptab");
+        }
+      }
+      var isOn = 0;
+      function killSwitch() {
+        isOn = 1;
+      }
+
+      function printLetterByLetter(destination, message, speed, isOn) {
+        if (isOn == 1) {
+          clearInterval(interval);
+          isOn = 0;
+          return;
+        }
+        document.getElementById("myNameIs").innerHTML = "";
+        var i = 0;
+        if (isOn == 1) {
+          clearInterval(interval);
+          isOn = 0;
+          return;
+        }
+        var interval = setInterval(function () {
+          if (isOn == 1) {
+            clearInterval(interval);
+            isOn = 0;
+            return;
+          }
+          document.getElementById(destination).innerHTML += message.charAt(i);
+          if (isOn == 1) {
+            clearInterval(interval);
+            isOn = 0;
+            return;
+          }
+          i++;
+          if (isOn == 1) {
+            clearInterval(interval);
+            isOn = 0;
+            return;
+          }
+          if (i > message.length) {
+            clearInterval(interval);
+          }
+        }, speed);
+      }
+
+      function emptyTheMessege(destination) {
+        document.getElementById(destination).innerHTML = "";
+      }
+      printLetterByLetter(
+        "myNameIs",
+        'print("Hello World, I\'m Connor!")',
+        70,
+        isOn
+      );
+      emptyTheMessege("myNameIs");
+    </script>
+
+    <div id="aboutmecontainer">
+      <!--About Me Heading-->
+      <div id="aboutmeheader" class="aboutme2" style="padding-bottom: 2vw">
+        About Me
+      </div>
+      <script>
+        window.addEventListener("scroll", () => {
+          const scrolled = window.scrollY;
+
+          var name = document.getElementById("language");
+          if (Math.ceil(scrolled) < 500) {
+            name.scrollIntoView({ behavior: "smooth" });
+          }
+
+          var aboutme = document.getElementById("aboutmeheader");
+          if (Math.ceil(scrolled) > 500 && Math.ceil(scrolled) < 1250) {
+            aboutme.scrollIntoView({ behavior: "smooth" });
+          }
+
+          var aboutthissite = document.getElementById("aboutsite");
+          if (Math.ceil(scrolled) > 1300 && Math.ceil(scrolled) < 1900) {
+            aboutthissite.scrollIntoView({ behavior: "smooth" });
+          }
+          var projects = document.getElementById("projectsheader");
+          if (Math.ceil(scrolled) > 1900) {
+            projects.scrollIntoView({ behavior: "smooth" });
+          }
+
+          if (Math.ceil(scrolled) > 500) {
+            document.getElementById("aboutmeheader").className = "slideRight";
+            document.getElementById("aboutmepara").className = "SlideLeft";
+            document.getElementById("line").className = "fadeIn";
+          }
+        });
+      </script>
+
+      <hr id="line" />
+
+      <!--About me Paragaph-->
+      <p id="aboutmepara" class="aboutmepara">
+        Hi! My name is Connor McEnery. I am a sophomore at Cornell University's
+        College of Engineering where I am studying Computer Science. I am very
+        passionate about Computer Science and am actively learning as much as I
+        can. I am currently learning more about web-development as well as C++
+        and many other topics.
+      </p>
+      <script>
+        //printLetterByLetter("aboutmepara", "                                                                                                  Hi! My name is Connor McEnery. I am a sophomore at Cornell University's College of Engineering where I am studying Computer Science. I am very passionate about Computer Science and am actively learning as much as I can. I am currently learning more about web-development as well as C++ and many other topics.", 45);
+      </script>
+
+      <!-- skills-->
+      <div id="skillsheader">
+        Skills and Interests
+        <hr id="line2" />
+        <div id="skills" name="container">
+          <div id="skills1" name="left">
+            <ul>
+              <li>Java</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>HTML/CSS</li>
+            </ul>
+          </div>
+          <div id="skills2" name="middle">
+            <ul>
+              <li>Some Javascript</li>
+              <li>GitHub</li>
+              <li>OCaml</li>
+              <li>Unix/Linux</li>
+            </ul>
+          </div>
+          <div id="skills3" name="right">
+            <ul>
+              <li>Artificial Intelligence</li>
+              <li>Machine Learning</li>
+              <li>Philanthropy</li>
+              <li>And much more...</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="aboutthissitecontainer">
+      <!--About this site Header-->
+      <div id="aboutsite">About this Site</div>
+
+      <!--Line-->
+      <hr id="line3" />
+
+      <!--About this Site Paragraph-->
+      <p id="aboutthissitepara" class="aboutthissitepara">
+        I developed this site not only to display my personal projects, but to
+        learn more about web-development in the process. This is the second
+        version of my personal website and it is still a work in progress, so
+        check back for more in the future.
+      </p>
+    </div>
+    <div id="projectscontainer">
+      <!--Projects Header-->
+      <div id="projectsheader">Projects</div>
+      <!--Line-->
+      <hr id="projectsline" />
+      <!--Projects-->
+      <div class="float-container">
+        <div class="float-child1">
+          <div id="projects">TicTacToe</div>
+          <div id="tictactoepara">
+            While I was teaching myself C++ over winter break, I decided to
+            build a console TicTacToe game. It was built using Visual Studio and
+            allows players to use their keyboard to choose a position on the
+            gameboard using "cin".
+          </div>
+          <img id="tictactoeimage" src="images/tictactoe.JPG" />
+        </div>
+
+        <div class="float-child2">
+          <div id="projects">Windows Calculator Application</div>
+          <div id="calculatorpara">
+            I wanted to create something that did not have to be compiled on an
+            IDE everytime I wanted to use it. This would allow it to be used by
+            anyone, regardless of their knowledge of programming. I created it
+            using the C++/CLR Windows Forms extension for Visual Studio. I then
+            built the project into an executable file.
+          </div>
+          <img id="calculatorimage" src="images/calculator.JPG" />
+        </div>
+      </div>
+    </div>
+    <!--Copyright-->
+    <div id="copyright">Developed by Connor McEnery</div>
+  </body>
+</html>
